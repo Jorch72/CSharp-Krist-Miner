@@ -5,6 +5,7 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using OpenCL.Net;
 
 namespace CSharp_Krist_Miner
 {
@@ -16,6 +17,7 @@ namespace CSharp_Krist_Miner
 
         public static string getHashSha256(string text)
         {
+            
             byte[] bytes = Encoding.UTF8.GetBytes(text);
             SHA256Managed hashstring = new SHA256Managed();
             byte[] hash = hashstring.ComputeHash(bytes);

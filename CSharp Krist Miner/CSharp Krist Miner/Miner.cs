@@ -44,7 +44,7 @@ namespace CSharp_Krist_Miner
                             break;
                         }
                         string nonceStr = nonce.ToString();
-                        for (int ii=0; i<32 - nonceStr.Length; i++)
+                        for (int ii=0; ii<32 - nonceStr.Length; ii++)
                         {
                             nonceStr = "0" + nonceStr;
                         }
